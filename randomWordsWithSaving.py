@@ -20,7 +20,7 @@ try: # Try this
             currWord += random.choice(letters) # Add new letter to the currWord variable
         words.append(currWord) # Append the word into the list of all of the words
         print(f"{pos}/{wordCount}. Written {currWord} to the list") # Print the word written to the list and the count (current words / all words)
-except (Exception and KeyboardInterrupt) as e: # Catch either the exceptin or the KeyboardInterrupt
+except (Exception and KeyboardInterrupt) as e: # Catch either the exception or the KeyboardInterrupt
     if filename: # If the filename variable is not blank, do the thing below
         if not e: # If got nothing in the exception
             print("Terminating and saving now...")
@@ -61,3 +61,6 @@ print("Done!") # Notify user about the comletition of the program
 
 # July 6th, 2023
 # Updated on the 2:17pm, July 9th
+
+###TODOLIST###
+# Figure out why the exception name isn't appearing in the cause. Lines 23 and 28
